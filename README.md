@@ -38,6 +38,10 @@ event (str) - record description (ie transaction, offer received, offer viewed, 
 person (str) - customer id<br />
 time (int) - time in hours since start of test. The data begins at time t=0<br />
 value - (dict of strings) - either an offer id or transaction amount depending on the record<br />
+
+# Files in the Repository
+A README file that includes the overall introduction of this project, my EDA findings and final model results. <br />
+Starbucks_Capstone_notebook.ipynb - A Jupyter file that has the Data Cleaning, EDA, Data preparation, fitting the model and evalution. This file is built upon a base Jupyter file provided by Udacity.
 # EDA
 1. There are 38% more male customers than female customers.<br />
 2. Male customers are right-skewed while female customers are more evenly distributed by income. The average income is 65405.<br />
@@ -55,6 +59,7 @@ calculated based on transcript dataset <br />
 
 Metrics in model evaluation: With K-means cluster model in this analysis, I am using ***Percentage of Variance Explained (PVE)*** to descide how many clusters will be the best to segment the customers with the data sample. <br />
 
+# Results
 # Evaluate the Model Results
 Interpreting the 3 clusters from the K-means model:<br />
 Cluster_1 Highly incentivized group: This group of customers have the highest income at around 69K with a balanced mix of gender. Most of them become members in 2016 and 2017. With an average CVR at 91% and VTR at 82%, this group of customers are highly responsive to the offers but not so much with advertisements. 
@@ -74,5 +79,8 @@ My first impression of selecting an algorithm for this analysis is clustering so
 # Next steps 
 The next step is to validate the segments in real-life settings. so A/B testing should be applied to see how the marketing campaigns perform within the 3 segments divided by the model above.
 
-# Featured Deliverables
+# Featured Deliverables - also A summary of the results of the analysis
 https://medium.com/@tamine4185/starbucks-customer-clustering-analysis-udacity-project-ddea21250720
+
+# Acknowledgements
+Credit to Udacity for the data and the base Jupyter File.
